@@ -1,0 +1,225 @@
+# Page settings
+
+baseurl = "https://srihas.github.io/resume/"
+languageCode = "en-us"
+title = "Srihas Kumar Resume"
+theme = "hugo-orbit-theme"
+googleAnalytics = "UA-169425103-1"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+[params]
+
+# Meta
+    description = "Srihas Kumar Resume"
+    author = "Srihas Kumar"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles-2.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Srihas Kumar"
+        tagline = "Senior Software Engineer - Java"
+        avatar = "profile.png"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: srihas.vit@gmail.com"
+        title = "srihas.vit@gmail.com"
+
+        [[params.contact.list]]
+        class = "phone"
+        icon = "fa-phone"
+        url = "tel:+919632322991"
+        title = "+919632322991"
+
+        [[params.contact.list]]
+        class = "website"
+        icon = "fa-globe"
+        url = "//srihas.github.io"
+        title = "srihas.github.io"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "//linkedin.com/in/srihas-kumar-1663448"
+        title = "linkedin.com/in/srihas-kumar-1663448"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/srihas"
+        title = "github.com/srihas"
+
+        [[params.contact.list]]
+        class = "twitter"
+        icon = "fa-twitter"
+        url = "//twitter.com/srihaskumar"
+        title = "@srihaskumar"
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "B-Tech in Electronics & Communication Engineering"
+        college = "Vellore Institute of Technology, Vellore"
+        dates = "2004 - 2008"
+
+
+    # Languages section
+    [params.language]
+        enable = true
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "English"
+        level = "Professional"
+
+        [[params.language.list]]
+        language = "Hindi"
+        level = "Native"
+
+        [[params.language.list]]
+        language = "Telugu"
+        level = "Native"
+
+    # Interests section
+    [params.interests]
+        enable = true
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "DIY"
+
+        [[params.interests.list]]
+        interest = "Home Automation"
+        
+        [[params.interests.list]]
+        interest = "Badminton"
+
+        [[params.interests.list]]
+        interest = "Trekking"
+
+        [[params.interests.list]]
+        interest = "Travel"
+
+        [[params.interests.list]]
+        interest = "Music"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = "**Summarise your career here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu."
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Senior Software Engineer"
+        dates = "2015 - 2020"
+        company = "Cisco Systems India Pvt Ltd, Bangalore"
+        details = "**Describe your role here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.\n\n Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+
+        [[params.jobs.list]]
+        position = "Software Engineer"
+        dates = "2012 - 2015"
+        company = "Schneider Electric India Pvt Ltd, Bangalore"
+        details = "**Describe your role here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+
+        [[params.jobs.list]]
+        position = "Systems Engineer"
+        dates = "2008 - 2012"
+        company = "Tata Consultancy Services, Bangalore"
+        details = "**Describe your role here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+
+    # Projects section
+    [params.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Projects"
+        intro = "List of projects and utilities hosted on github."
+
+        [[params.projects.list]]
+        title = "order-mgmt-app-k8s"
+        url = "https://github.com/srihas/order-mgmt-app-k8s"
+        tagline = "Inventory & Order management microservices based application deployable on Kubernetes - Local(Minikube) and Google cloud"
+
+        [[params.projects.list]]
+        title = "Helm Charts"
+        url = "https://github.com/srihas/charts"
+        tagline = "Helm charts repository with charts for rabbitmq, postgresdb, Order mgmt app"
+
+        [[params.projects.list]]
+        title = "vertx-spring-mongo-blog"
+        url = "https://github.com/srihas/vertx-spring-mongo-blog"
+        tagline = "Blog using vertx - reactive framework, Spring, MongoDB"
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "Java"
+        level = "90%"
+
+        [[params.skills.list]]
+        skill = "Spring MVC & Spring Boot"
+        level = "75%"
+
+        [[params.skills.list]]
+        skill = "Docker"
+        level = "70%"
+
+        [[params.skills.list]]
+        skill = "Kubernetes"
+        level = "60%"
+
+        [[params.skills.list]]
+        skill = "Javascript & jQuery"
+        level = "70%"
+
+        [[params.skills.list]]
+        skill = "Python"
+        level = "60%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    # 
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = "Ported for Hugo by Srihas Kumar"
